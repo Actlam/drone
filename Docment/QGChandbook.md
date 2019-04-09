@@ -12,8 +12,8 @@ APMのMissionPlannerや, DJIのGS PROが比較して挙げられます. ドロ�
 
 ### 困ったときは
 躓いたときはQGCのリファレンスページを参照しましょう. 
-ユーザーガイドかデベロッパーガイドを見れば大抵のことは解決するはず(?)
-[PX4 User Guide](https://docs.px4.io/en/)
+ユーザーガイドかデベロッパーガイドを見れば大抵のことは解決するはず(?)<br>
+[PX4 User Guide](https://docs.px4.io/en/)<br>
 [PX4 Development Guide](https://dev.px4.io/en/)
 
 - 注意点
