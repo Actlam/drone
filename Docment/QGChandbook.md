@@ -33,16 +33,17 @@ APMのMissionPlannerや, DJIのGS PROが比較して挙げられます. ドロ�
 ### パーツの役割と選定
 ドローン製作にあたって必要なパーツは以下の通り.
 パーツの役割や選び方知っておくと後々役に立つかも.
+写真はイメージ.
 
 
 - フライトコントローラー(FC)
   - Pixhawk 2.4.x(本マニュアル推奨FC)
   - [いろんなFCがある](http://shiguregaki.com/?p=887)
-  <img src="./images/pixhawk.jpg" alt="pixhawk" width="500">
+  <img src="./images/pixhawk.jpg" alt="pixhawk" width="300">
 
 - GPS モジュール
   - I2C通信で接続
-  <img src="./images/gps.jpg" alt="gpsmodule" width="500">
+  <img src="./images/gps.jpg" alt="gpsmodule" width="300">
   
 - Switch　モジュール
 - Buzzer モジュール
@@ -50,19 +51,19 @@ APMのMissionPlannerや, DJIのGS PROが比較して挙げられます. ドロ�
   - 設定やアーム, フライトモードを変更したときにここから音が鳴る(騒音)
 - Power モジュール
   - 電池の配線を分配し, FCへの給電5Vとモータへの給電ができる.
-  <img src="./images/power.jpg" alt="powermodule" width="500">
+  <img src="./images/power.jpg" alt="powermodule" width="300">
 - telemetly モジュール
   - 必須ではないが, あると便利.
   - USB接続せずPCから遠隔で設定やフライト, 機体情報の確認が可能になる. 
   - Pixhawk側とPC側でそれぞれ取り付け
-  <img src="./images/radiop.jpg" alt="telemetry" width="500">
-  <img src="./images/radiopc.jpg" alt="telemetry2" width="500">
+  <img src="./images/radiop.jpg" alt="telemetry" width="300">
+  <img src="./images/radiopc.jpg" alt="telemetry2" width="300">
 - PitotTube
   - 対気速度計
   - 必須ではないが, 飛行機形状のエアフレームを利用する場合必要になる.
   - I2C通信で接続
   - I2C接続口は一つしかないのでI2Cスプリッターを使ってGPSとPitotTubeを接続する
-  <img src="./images/pitottube.jpg" alt="pitottube" width="500">
+  <img src="./images/pitottube.jpg" alt="pitottube" width="300">
 
 - 機体フレーム
   - 軽くて丈夫だと◎
@@ -72,28 +73,28 @@ APMのMissionPlannerや, DJIのGS PROが比較して挙げられます. ドロ�
   - 一つのモータに一つのアンプが必要.
   - モータに必要なAにあったアンプを選定.
   - 最大Aの足りなかったり, 余裕のないアンプを選ぶと燃えたり墜落するので注意.
-  <img src="./images/esc.jpg" alt="esc" width="500">
+  <img src="./images/esc.jpg" alt="esc" width="300">
 - ブラシレスモーター
   - 機体の重量から必要推力を考慮→モータの選定
   - [仕組み](https://www.orientalmotor.co.jp/tech/teruyo/vol32/)
   - [選び方1](http://japandronelicense.com/blog/how-to-choose-drone-mortor/)
   - [選び方2](https://droneport-uav.com/?p=159)
-    <img src="./images/motor.jpg" alt="motor" width="500">
+  <img src="./images/motor.jpg" alt="motor" width="300">
 - プロペラ
   - [プロペラの諸元表記について](https://otonaradicon.com/%E3%83%89%E3%83%AD%E3%83%BC%E3%83%B3%EF%BC%88%E3%83%9E%E3%83%AB%E3%83%81%E3%82%B3%E3%83%97%E3%82%BF%E3%83%BC%EF%BC%89%E3%81%AE%E3%83%97%E3%83%AD%E3%83%9A%E3%83%A9%E3%82%B5%E3%82%A4%E3%82%BA/)
   - 劣化や破損で交換が必要になるので予備があると◎
 - 電池
   - LiPo
   - 重さ, セル数(電圧), 容量が重要
-    <img src="./images/battery.jpg" alt="battery" width="500">
+  <img src="./images/battery.jpg" alt="battery" width="300">
 - 受信機
   - プロポと信号の送受信をするモジュール
   - チャンネル数は基本的に5~
   - PWM信号([参考](http://www.kairo-nyumon.com/pwm_signal.html))
-    <img src="./images/dmss.jpg" alt="dmss" width="500">
+  <img src="./images/dmss.jpg" alt="dmss" width="300">
 - PPM Encoder
   - 受信機が受信した信号を1本にまとめる
-    <img src="./images/ppmencoder.jpg" alt="ppm" width="500">
+  <img src="./images/ppmencoder.jpg" alt="ppm" width="300">
 - プロポ(ラジコン用送信機)
   - 製品マニュアルを見れば大体のことは解決
 
@@ -153,22 +154,25 @@ CW, CCWはモータの回転方向の指定([参照](https://www.orientalmotor.c
 - 遷移飛行を行うAirframeでは, トランジションスイッチも割り当てる必要がある.
 
 ##### Power
-- アームにあたって, バッテリの設定は不要.
+- バッテリの設定は必須ではないため省略.
 - `ESC PWM Minimum and Maximum Calibration`の項目で, ESCのキャリブレーションをまとめて行うことができる（簡単なのでおすすめ） 
 - ※ESCごとにキャリブレーションを行うこともできる(ESCの説明書に記述)
 
 ### フライト
 作ったドローンをフライトさせるためには, いくつかの準備が必要です.
+
 - アーム
 - バッテリ残量の確認
 - 周囲の状況確認
   - 風速
   - 天候
-  - 人
 
 ##### アーム
+- 機体を飛ばせる場所まで移動させ,　機体や周囲に危険がないか確認したら, アームを行います.
 - Switchモジュールを長押し後, アームスイッチを入れることでアームできます.
 - アームするとスロットルへの入力が入るようになります.
+
+
 
 **Let's flight.**
 
