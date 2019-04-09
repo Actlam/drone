@@ -31,8 +31,8 @@ APMのMissionPlannerや, DJIのGS PROが比較して挙げられます. ドロ�
 
 
 ### パーツの役割と選定
-ドローン製作にあたって必要なパーツは以下の通り.
-パーツの役割や選び方知っておくと後々役に立つかも.
+ドローン製作にあたって必要なパーツは以下の通り.<br>
+パーツの役割や選び方知っておくと後々役に立つかも.<br>
 写真はイメージ.
 
 
@@ -102,9 +102,9 @@ Windows/Mac/Linux/Android/iOS対応<br>
 
 ### 組み立て
 
-選択するエアフレームの[リファレンス](https://docs.px4.io/en/airframes/airframe_reference.html)を参照して配線.
-本体側のRCピンにはPPMEncoderを配線.
-CW, CCWはモータの回転方向の指定([参照](https://www.orientalmotor.co.jp/tech/glossary/eng03/)).
+選択するエアフレームの[リファレンス](https://docs.px4.io/en/airframes/airframe_reference.html)を参照して配線.<br>
+本体側のRCピンにはPPMEncoderを配線.<br>
+CW, CCWはモータの回転方向の指定([参照](https://www.orientalmotor.co.jp/tech/glossary/eng03/)).<br>
 
 
 ### QGCでフライトコントローラのセットアップ
@@ -162,9 +162,9 @@ CW, CCWはモータの回転方向の指定([参照](https://www.orientalmotor.c
   - 天候
 
 ##### アーム
-- 機体を飛ばせる場所まで移動させ,　機体や周囲に危険がないか確認したら, アームを行います.
-- Switchモジュールを長押し後, アームスイッチを入れることでアームできます.
-- アームするとスロットルへの入力が入るようになります.
+- 機体を飛ばせる場所まで移動させ,　機体や周囲に危険がないか確認したら, アームを行います.<br>
+- Switchモジュールを長押し後, アームスイッチを入れることでアームできます.<br>
+- アームするとスロットルへの入力が入るようになります.<br>
 
 
 
@@ -173,9 +173,9 @@ CW, CCWはモータの回転方向の指定([参照](https://www.orientalmotor.c
 
 ### フライトログの取得
 
-Pixhawkでは, microSDを挿入しておくだけでフライトログが取得できます. 
-QGroundControlは, 独自の分析ビューを開発しているので, これを利用します. 
-取得したフライトログ(拡張子:ulg)データを[Flight Review](https://review.px4.io/)にアップロードすることでログの分析が可能です.
+Pixhawkでは, microSDを挿入しておくだけでフライトログが取得できます. <br>
+QGroundControlは, 独自の分析ビューを開発しているので, これを利用します. <br>
+取得したフライトログ(拡張子:ulg)データを[Flight Review](https://review.px4.io/)にアップロードすることでログの分析が可能です.<br>
 (ulgファイルはcsvに変換可能なのでエクセルでグラフ化することもできます)
 
 
