@@ -7,7 +7,7 @@
 <img src="./images/QGClogo.png" width="200">
 
 GCS(Ground Control Station)と呼ばれるソフトウェアで, 地上から機体制御ゲインの調整や飛行経路の設定ができるソフトです. 
-APMのMissionPlannerや, DJIのGS PROが比較して挙げられます. ドローンをフライトさせるために, 必要なソフトウェアだと認識しておけばいいでしょう.
+APMのMissionPlannerや, DJIのGS PROが同レイヤーのソフトウェアとして挙げられます. ドローンをフライトさせるために, 必要なソフトウェアだと認識しておけばいいでしょう.
 
 
 ### 困ったときは
